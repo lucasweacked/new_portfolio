@@ -8,12 +8,17 @@
     --cor-quartenaria: #FEF9D9;
 
     /* Formações */
-    --cor-senaria: #016A70;
-    --cor-quintenaria: #008CBA;
+    --cor-primaria-formacao: #008CBA;
+    --cor-secundaria-formacao: #016A70;
 
     /* Projetos */
-    --cor-setenaria: #272829;
-    --cor-octenaria: #D2FF72;
+    --cor-primaria-projetos: #272829;
+    --cor-secundaria-projetos: #D2FF72;
+    --cor-tercearia-projetos: #BFEA5F;
+
+    /* Contato */
+    --cor-primaria-contato: #000000;
+    --cor-secundaria-contato: #4A4947;
 
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
@@ -90,14 +95,14 @@ body {
 }
 
 .formacao__conteudo__titulo {
-    color: var(--cor-senaria);
+    color: var(--cor-secundaria-formacao);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 2rem;
 }
 
 .formacao__conteudo__titulo__categorias {
-    color: var(--cor-senaria);
+    color: var(--cor-secundaria-formacao);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 1.8rem;
@@ -105,6 +110,7 @@ body {
 }
 
 .formacao__conteudo__titulo__categorias__paragrafo {
+    color: var(--cor-primaria-contato);
     font-family: var(--font-secundaria);
     font-weight: 400;
     font-size: 1.5rem;
@@ -123,12 +129,12 @@ body {
 
 .formacao__conteudo__cursos li a {
     text-decoration: none;
-    color: var(--cor-quintenaria);
+    color: var(--cor-primaria-formacao);
 }
 
 .projetos {
     padding: 4% 5%;
-    background-color: var(--cor-setenaria);
+    background-color: var(--cor-primaria-projetos);
 }
 
 .projetos__conteudo {
@@ -138,7 +144,7 @@ body {
 }
 
 .projetos__conteudo__titulo {
-    color: var(--cor-octenaria);
+    color: var(--cor-secundaria-projetos);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 2rem;
@@ -146,7 +152,7 @@ body {
 }
 
 .projetos__conteudo__projetos {
-    color: var(--cor-octenaria);
+    color: var(--cor-secundaria-projetos);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 1.6rem;
@@ -161,7 +167,7 @@ body {
 }
 
 .projetos__conteudo__projetos__paragrafo a {
-    color: var(--cor-secundaria);
+    color: var(--cor-secundaria-projetos);
     font-family: var(--font-secundaria);
     font-weight: 400;
     font-size: 1.5rem;
@@ -169,6 +175,112 @@ body {
 }
 
 .projetos__conteudo__projetos__paragrafo a:hover {
-    color: #537188;
+    color: var(--cor-tercearia-projetos);
     text-decoration: underline;
+}
+
+.contato {
+    padding: 4% 5%;
+}
+
+.contato__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contato__conteudo__titulo {
+    color: var(--cor-primaria-contato);
+    font-family: var(--font-primaria);
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contato__conteudo__paragrafo {
+    color: var(--cor-primaria-contato);
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contato__conteudo__subtitulo {
+    color: var(--cor-primaria-contato);
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contato__conteudo__paragrafo__contato {
+    color: var(--cor-primaria-contato);
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contato__conteudo__paragrafo__contato a {
+    text-decoration: none;
+    color: var(--cor-secundaria-contato);
+}
+
+.contato__conteudo__imagem__gmail {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    vertical-align: middle
+}
+
+.contato__conteudo__imagem__whatsapp {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.3rem;
+    vertical-align: middle
+}
+
+.rodape {
+    padding: 4% 5%;
+    background-color: #173B45;
+    border-top: 0.0625rem solid #f6f6f6;
+}
+
+.rodape__conteudo {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.rodape__conteudo__redes {
+    margin-bottom: 0.625rem;
+}
+
+.rodape__conteudo__redes a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.rodape__conteudo__redes img {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.rodape__conteudo__redes a:hover img {
+    transform: scale(1.1);
+}
+
+.rodape__conteudo__paragrafo {
+    font-family: var(--font-secundaria);
+    color: #FFF4EA;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    
 }
