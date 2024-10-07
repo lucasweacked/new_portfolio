@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
+    /* Principal */
     --cor-primaria: #0052cc;
     --cor-secundaria: #F3F7EC;
     --cor-tercearia: #FAEF5D;
     --cor-quartenaria: #FEF9D9;
-    --cor-quintenaria: #008CBA;
+
+    /* Formações */
     --cor-senaria: #016A70;
+    --cor-quintenaria: #008CBA;
+
+    /* Projetos */
+    --cor-setenaria: #272829;
+    --cor-octenaria: #D2FF72;
 
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
@@ -121,7 +128,7 @@ body {
 
 .projetos {
     padding: 4% 5%;
-    background-color: #272829;
+    background-color: var(--cor-setenaria);
 }
 
 .projetos__conteudo {
@@ -131,7 +138,7 @@ body {
 }
 
 .projetos__conteudo__titulo {
-    color: var(--cor-secundaria);
+    color: var(--cor-octenaria);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 2rem;
@@ -139,7 +146,7 @@ body {
 }
 
 .projetos__conteudo__projetos {
-    color: #D2FF72;
+    color: var(--cor-octenaria);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 1.6rem;
