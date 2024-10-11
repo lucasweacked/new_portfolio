@@ -187,10 +187,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .contato__conteudo__titulo {
-    color: var(--cor-primaria-contato);
     font-family: var(--font-primaria);
     font-weight: 900;
     font-size: 2rem;
@@ -198,54 +199,86 @@ body {
 }
 
 .contato__conteudo__paragrafo {
-    color: var(--cor-primaria-contato);
     font-family: var(--font-secundaria);
     font-weight: 400;
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.3rem;
 }
 
-.contato__conteudo__subtitulo {
-    color: var(--cor-primaria-contato);
+.contato__formulario {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0% 10%;
+}
+
+.contato__formulario__linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.contato__formulario__grupo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__formulario__nomes {
     font-family: var(--font-secundaria);
     font-weight: 400;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #1A4870;
+    margin-bottom: 0.8rem;
 }
 
-.contato__conteudo__paragrafo__contato {
-    color: var(--cor-primaria-contato);
+.contato__formulario__campos {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--cor-primaria);
+    font-size: 1rem;
     font-family: var(--font-secundaria);
-    font-weight: 400;
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 2rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-.contato__conteudo__paragrafo__contato a {
-    text-decoration: none;
-    color: var(--cor-secundaria-contato);
+.contato__formulario__campos::placeholder {
+    font-size: 0.9rem;
 }
 
-.contato__conteudo__imagem__gmail {
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-    vertical-align: middle
+.contato__formulario__campos:focus {
+    border-color: #6e56af;
 }
 
-.contato__conteudo__imagem__whatsapp {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.3rem;
-    vertical-align: middle
+.contato__formulario__campos {
+    resize: none;
+}
+
+.contato__formulario__botao {
+    background-color: #6e56af;
+    color: var(--cor-secundaria);
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-primaria);
+}
+
+.contato__formulario__botao:hover {
+    background-color: #5a3f99;
 }
 
 .rodape {
     padding: 4% 5%;
-    background-color: #173B45;
+    background-color: #0B192C;
     border-top: 0.0625rem solid #f6f6f6;
 }
 
@@ -281,7 +314,6 @@ body {
 }
 
 /* Responsividade */
-
 @media (max-width: 1450px) {
     .apresentacao__lado-esquerdo {
         background-color: var(--cor-primaria);
@@ -328,7 +360,7 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .apresentacao {
         display: flex;
         flex-direction: column;
@@ -361,5 +393,13 @@ body {
         max-width: 80%;
         height: auto;
         border-radius: 16px;
+    }
+
+    .formacao__conteudo__cursos li {
+        font-family: var(--font-secundaria);
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 0.8rem;
+        list-style: none;
     }
 }
