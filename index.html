@@ -23,11 +23,9 @@
 
         <!-- Lado direito -->
         <section class="apresentacao__lado-direito">
-
             <section class="apresentacao__imagem">
                 <img class="apresentacao__imagem__central" src="./assets/imgs/imagem.png" alt="Imagem do Lucas Barros, estudante de Sistemas de Informação.">
             </section>
-
         </section>
     </main>
 
@@ -91,17 +89,34 @@
         </section>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <section class="contato__conteudo">
             <h2 class="contato__conteudo__titulo">Contato</h2>
-
-            <p class="contato__conteudo__paragrafo">Curtiu o meu trabalho? Fique à vontade para entrar em contato! Estou sempre aberto a novas oportunidades e colaborações.</p>
-
-            <h3 class="contato__conteudo__subtitulo">Informações de Contato</h3>
-
-            <p class="contato__conteudo__paragrafo__contato"><img src="./assets/imgs/gmail_logo.png" alt="Logo do Gmail" class="contato__conteudo__imagem__gmail"><strong>Email: </strong><a href="mailto:contato@helperx.com.br">contato@helperx.com.br</a></p>
-
-            <p class="contato__conteudo__paragrafo__contato"><img src="./assets/imgs/whatsapp_logo.png" alt="Logo do WhatsApp" class="contato__conteudo__imagem__whatsapp"><strong>Telefone: </strong><a href="tel:+5513996222102">(13) 99622-2102</a></p>
+    
+            <p class="contato__conteudo__paragrafo">
+                Curtiu o meu trabalho? Fique à vontade para entrar em contato! Estou sempre aberto a novas oportunidades e colaborações.
+            </p>
+    
+            <form class="contato__formulario">
+                <div class="contato__formulario__linha">
+                    <div class="contato__formulario__grupo">
+                        <label for="nome" class="contato__formulario__nomes">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Preencha o seu nome" class="contato__formulario__campos" required>
+                    </div>
+    
+                    <div class="contato__formulario__grupo">
+                        <label for="email" class="contato__formulario__nomes">E-Mail</label>
+                        <input type="email" name="email" id="email" placeholder="Preencha o seu e-mail" class="contato__formulario__campos" required>
+                    </div>
+                </div>
+    
+                <div class="contato__formulario__grupo">
+                    <label for="motivo-contato" class="contato__formulario__nomes">Motivo do Contato</label>
+                    <textarea name="motivo-contato" id="motivo-contato" rows="5" placeholder="Olá, gostaria de discutir um projeto de desenvolvimento front-end. Quando poderíamos agendar uma reunião?" class="contato__formulario__campos" required></textarea>
+                </div>
+    
+                <button type="submit" class="contato__formulario__botao">Enviar</button>
+            </form>
         </section>
     </section>
 
@@ -118,7 +133,7 @@
                     <img src="assets/imgs/instagram_logo.png" alt="Logo do Instagram">
                 </a>
             </div>
-            <p class="rodape__conteudo__paragrafo">&copy; 2024 HelperX. Todos os direitos reservados.</p>
+            <p class="rodape__conteudo__paragrafo">&copy; 2024 Lucas Barros Simon. Todos os direitos reservados.</p>
         </section>
     </footer>
 
