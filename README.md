@@ -29,10 +29,13 @@ new_portfolio/
 ## 📌 Como Visualizar
 Clique [aqui](https://lucasweacked.github.io/new_portfolio/) para visualizar o portfólio online.
 
-## 🚀 Projetos em Destaque
-- [Hora-Extra](https://github.com/lucasweacked/hora-extra): Calculadora de horas extras.
-- [Cinema Database](https://github.com/lucasweacked/desafio-alura): Aplicação de busca por filmes e diretores.
-- [Screen Sound](https://github.com/lucasweacked/screen-sound): Gerenciamento de listas musicais.
+## 🚀 Projetos em Destaque  
+- [Hora-Extra](https://github.com/lucasweacked/hora-extra): Calculadora de horas extras.  
+- [Cinema Database](https://github.com/lucasweacked/desafio-alura): Aplicação de busca por filmes e diretores.  
+- [Screen Sound](https://github.com/lucasweacked/screen-sound): Gerenciamento de listas musicais.  
+- [Portfólio](https://github.com/lucasweacked/portfolio): Página pessoal de portfólio.  
+- [Portfólio Alura](https://github.com/lucasweacked/portfolio-alura): Projeto de portfólio desenvolvido em desafio da Alura.  
+- [Calculator](https://github.com/lucasweacked/calculator): Aplicação para cálculos matemáticos básicos.  
 
 ## 📧 Contato
 Caso tenha interesse em colaborar ou fornecer feedback, entre em contato pelo [GitHub](https://github.com/lucasweacked).
