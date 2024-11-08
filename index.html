@@ -98,7 +98,7 @@
                 Curtiu o meu trabalho? Fique à vontade para entrar em contato! Estou sempre aberto a novas oportunidades e colaborações.
             </p>
     
-            <form class="contato__formulario">
+            <form action="https://formsubmit.co/ajax/lucasweacked21@gmail.com" method="post" data-form class="contato__formulario">
                 <div class="contato__formulario__linha">
                     <div class="contato__formulario__grupo">
                         <label for="nome" class="contato__formulario__nomes">Nome</label>
@@ -116,7 +116,7 @@
                     <textarea name="motivo-contato" id="motivo-contato" rows="5" placeholder="Olá, gostaria de discutir um projeto de desenvolvimento front-end. Quando poderíamos agendar uma reunião?" class="contato__formulario__campos" required></textarea>
                 </div>
     
-                <button type="submit" class="contato__formulario__botao">Enviar</button>
+                <button type="submit" class="contato__formulario__botao" data-button>Enviar</button>
             </form>
         </section>
     </section>
@@ -141,6 +141,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./script.js"></script>
     
 </body>
 </html>
